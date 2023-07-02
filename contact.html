@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+ 
+
+    <form class="contact-form" action="submit-form.php" method="POST">
+        <div class="container">
+            <h1 class="caption">Contact Me</h1>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Enter your message" rows="4" required></textarea>
+        
+              <button type="submit"><i class="fas fa-paper-plane"></i>Submit</button>
+    </form>
+      
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f1f1f1;
+          margin: 0;
+          padding: 20px;
+        }
+    
+        .container {
+          max-width: 400px;
+          margin: 0 auto;
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 5px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        .caption {
+          text-align: center;
+          font-size: 24px;
+          margin-bottom: 20px;
+          color: #333;
+        }
+    
+        .contact-form {
+          margin-bottom: 20px;
+        }
+    
+        .contact-form input[type="text"],
+        .contact-form input[type="tel"],
+        .contact-form textarea {
+          width: 94%;
+          padding: 12px;
+          border-radius: 4px;
+          border: 1px solid #ccc;
+          background-color: #f8f8f8;
+          margin-bottom: 10px;
+          resize: vertical;
+        }
+    
+        .contact-form label {
+          color: #555;
+          font-weight: bold;
+          display: block;
+          margin-bottom: 5px;
+        }
+    
+        .contact-form textarea {
+          height: 120px;
+        }
+    
+        .contact-form button {
+          background-color: #4CAF50;
+          color: #fff;
+          border: none;
+          padding: 12px 20px;
+          font-size: 16px;
+          border-radius: 4px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+        }
+    
+        .contact-form button:hover {
+          background-color: #45a049;
+        }
+    
+        .contact-form button i {
+          margin-right: 5px;
+        }
+      </style>
+
+
+  </div>
+</body>
+</html>

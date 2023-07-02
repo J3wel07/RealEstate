@@ -1,0 +1,252 @@
+body {
+        background: linear-gradient(to right,white, #bdcfda, white);
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  
+.all ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    position: absolute;
+    top: 6%;
+    font-size: 23px;
+    left: 30%;
+  }
+  .all a{
+    text-decoration: none;
+    color: black;
+  }
+  .all a:hover{
+    color: rgb(237, 36, 106);
+  }
+  .up ul li a {
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .up ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: blue; 
+    transition: width 0.3s ease; 
+  }
+  
+  .up ul li a:hover::after {
+    width: 100%;
+  }
+  
+  
+  
+.jewel{
+    position: absolute;
+    left: 10%;
+    top: 3%;
+    font-size: 26px;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 10px;
+}
+.contact a{
+    position: absolute;
+    left: 2100%;
+    background-color: rgb(86, 86, 86);
+    border-radius: 3px;
+    padding: 13px;
+    top: -10px;
+    color: white;
+}
+.contact a:hover{
+    color: white;
+}
+.building{
+    position: absolute;
+    top: 20%;
+    right: 0%;
+    width: 50%;
+    border-radius: 10px;
+}
+.text {
+    position: absolute;
+    top: 20%;
+    font-size: 50px;
+    font-family: 'Roboto Slab', serif;
+    left: 7%;
+    letter-spacing: 2px;
+}
+.parag {
+    position: absolute;
+    top: 43%;
+    font-size: 20px;
+    left: 7%;
+    font-family: 'Source Code Pro', monospace;
+    letter-spacing: 1px;
+}
+.material-symbols-outlined{
+    position: absolute;
+    top: 9.5%;
+    left: 7%;
+     font-variation-settings:
+  'FILL' 100,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.po{
+    position: absolute;
+    top: 59%;
+    left: 7%;
+    font-family: 'Delius', cursive;
+}
+.pop{
+    position: absolute;
+    top: 63%;
+    left: 7%;
+    font-family: 'Source Code Pro', monospace;
+}
+.houses img{
+  width: 400px;
+  border-radius: 70px;
+}
+
+.house-container {
+  display: none;
+  position: absolute;
+  top: 550px;
+  left: 100px;
+}
+
+.house-container.active {
+  display: block;
+  animation: fade-in 0.5s ease-in-out;
+}
+
+.navigation {
+  position: absolute;
+  bottom: -4px;
+  left: 2.5%; 
+}
+
+.navigation span {
+  font-size: 34px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navigation span:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+  margin-right: 90px;
+}
+
+.next {
+  margin-left: 360px;
+}
+
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.aboutussss{
+  position: absolute;
+  top: 130%;
+}
+.aboutussss p{
+color: black;
+font-family: 'Source Code Pro', monospace;
+text-align: center;
+font-size: 20px;
+margin-bottom: 10px;
+letter-spacing: 3px;
+font-weight: 900;
+margin-top: 30px;
+margin-left: 100px;
+margin-right: 100px;
+}
+.about{
+text-align: center;
+font-family: 'Delius', cursive;
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  position: relative;
+  top: 1320px;
+  height: 100px;
+}
+
+.social-media a {
+  font-size: 35px;
+  margin: 0 15px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-media a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.social-media a::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  z-index: -1;
+  border-radius: 50%;
+  background-color: #66c2ff;
+  transition: all 0.2s ease-in-out;
+  transform: scale(0);
+}
+
+.social-media a:hover::before {
+  transform: scale(1);
+}
+
+.social-media a i {
+  transition: all 0.2s ease-in-out;
+}
+
+.social-media a:hover i {
+  transform: rotate(360deg);
+}
+
+.fa-facebook-f {
+  color: #1877f2;
+}
+
+.fa-twitter {
+  color: #1da1f2;
+}
+
+.fa-instagram {
+  color: #f77737;
+}
